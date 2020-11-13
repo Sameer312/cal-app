@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    
+
+<input type="button" value="+" onclick="box1()">
+
+<label id="num">0</label>
+
+
+<input type="button" value="-" onclick="box2()">
+
+<script>
+
+function box1(){
+    let number = document.getElementById('num').textContent;
+    let a = parseInt(number);
+    a++;
+    console.log(a);
+
+
+    document.getElementById('num').innerHTML = a;
+}
+
+function box2(){
+    let number = document.getElementById('num').textContent;
+    let a = parseInt(number);
+    a--;
+    console.log(a);
+
+
+    document.getElementById('num').innerHTML = a;
+}
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
